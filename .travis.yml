@@ -7,7 +7,7 @@ go:
 
 install:
     # Get our required packages
-    - go get github.com/golang/lint/golint
+    - go get golang.org/x/lint/golint
 
 script:
     - errors=$(gofmt -l ./src/); echo $errors; (exit $([ "$errors" == "" ]))
